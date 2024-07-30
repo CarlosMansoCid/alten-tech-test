@@ -1,12 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { RouterProvider, TanstackQueryProvider } from "./providers";
+import {
+  I18nProvider,
+  RouterProvider,
+  TanstackQueryProvider,
+} from "./providers";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <TanstackQueryProvider>
-      <RouterProvider />
-    </TanstackQueryProvider>
+    <I18nProvider>
+      <TanstackQueryProvider>
+        <RouterProvider />
+      </TanstackQueryProvider>
+    </I18nProvider>
   </React.StrictMode>
 );
