@@ -1,0 +1,6 @@
+.title__root {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  line-height: 37.5px;
+  margin: var(--m-sm) 0;
+}

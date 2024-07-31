@@ -6,6 +6,7 @@
   --inactive-color: #aaaaaa;
   --surface-color-ligth: #d9d9d9;
   --font-color-contrast: #ffffff;
+  --font-color: #000000;
 
   /* Padding */
   --p-xs: 8px;
@@ -30,6 +31,10 @@
 
   /* Transition */
   --transition-time: 0.3s;
+
+  /* Margin */
+  --m-xs: 8px;
+  --m-sm: 12px;
 
   accent-color: var(--primary-color);
   font-family: "Roboto Condensed", sans-serif;

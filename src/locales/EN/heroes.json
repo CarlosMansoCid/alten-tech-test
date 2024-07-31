@@ -1,0 +1,11 @@
+{
+  "searchInput": {
+    "placeholder": "SEARCH A CHARACTER"
+  },
+  "resultsCount": {
+    "label": "RESULTS"
+  },
+  "favoritesPage": {
+    "title": "FAVORITES"
+  }
+}
