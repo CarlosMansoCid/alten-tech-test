@@ -2,5 +2,9 @@
   "langs": {
     "es": "Spanish",
     "en": "English"
+  },
+  "errorPage": {
+    "title": "Something went wrong:",
+    "linkLabel": "Comeback to home"
   }
 }

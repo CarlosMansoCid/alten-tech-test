@@ -2,5 +2,9 @@
   "langs": {
     "es": "Español",
     "en": "Inglés"
+  },
+  "errorPage": {
+    "title": "Algo no fue bien:",
+    "linkLabel": "Volver al inicio"
   }
 }
