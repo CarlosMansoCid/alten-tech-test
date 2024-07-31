@@ -7,10 +7,17 @@
   --surface-light-color: #d9d9d9;
 
   /* Padding */
-  --p-xl: 12px;
+  --p-xs: 12px;
   --p-sm: 16px;
   --p-lg: 24px;
-  --p-xxl: 48px;
+  --p-xl: 48px;
+
+  /* Font size */
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 24px;
+  --fs-xxl: 32px;
 
   accent-color: var(--primary-color);
   font-family: "Roboto Condensed", sans-serif;
