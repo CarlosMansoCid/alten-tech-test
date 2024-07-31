@@ -5,20 +5,40 @@
   --bg-color: #ffffff;
   --inactive-color: #aaaaaa;
   --surface-light-color: #d9d9d9;
+  --font-color-contrast: #ffffff;
 
   /* Padding */
-  --p-xs: 12px;
-  --p-sm: 16px;
+  --p-xs: 8px;
+  --p-sm: 12px;
+  --p-md: 16px;
   --p-lg: 24px;
   --p-xl: 48px;
 
   /* Font size */
   --fs-xs: 12px;
   --fs-sm: 14px;
-  --fs-lg: 16px;
-  --fs-xl: 24px;
-  --fs-xxl: 32px;
+  --fs-md: 16px;
+  --fs-lg: 24px;
+  --fs-xl: 32px;
+
+  /* Breakpoints */
+  --bp-xs: 576px;
+  --bp-sm: 768px;
+  --bp-md: 992px;
+  --bp-lg: 1200px;
+  --bp-xl: 1408px;
 
   accent-color: var(--primary-color);
   font-family: "Roboto Condensed", sans-serif;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }

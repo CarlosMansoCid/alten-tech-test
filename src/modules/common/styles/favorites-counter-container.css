@@ -1,0 +1,26 @@
+.favorite_counter__root {
+  width: 56px;
+  height: 37.68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--p-xs);
+}
+
+.favorite_counter__icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  width: 24px;
+  height: 21.68px;
+}
+
+.favorite_counter__label {
+  font-weight: 400;
+  font-size: var(--fs-lg);
+  line-height: 18.75px;
+  width: 8px;
+  height: 19px;
+  color: var(--font-color-contrast);
+}

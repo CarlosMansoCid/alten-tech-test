@@ -1,0 +1,17 @@
+.navbar_container__root {
+  width: 100vw;
+  height: 84px;
+  background-color: var(--surface-color);
+  top: 0px;
+  padding: var(--p-md) var(--p-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (width < 576px) {
+  .navbar_container__root {
+    padding: var(--p-md);
+  }
+}
