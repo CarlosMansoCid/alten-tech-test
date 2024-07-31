@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import "../../common/styles/section-p-container.css";
 
 const FavoritesPage = () => {
-  const { t } = useTranslation("heroes");
+  const { t } = useTranslation("character");
   return (
     <section className="section_p__content_container">
       <Title label={t("favoritesPage.title")} />

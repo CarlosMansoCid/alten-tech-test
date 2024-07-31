@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../modules/common/layouts/main.layout";
-import { HeroesRoutes } from "../modules/heroes/routes";
+import { CharactersRoutes } from "../modules/character/routes";
 import { ErrorPage, NotFoundPage } from "../modules/common/pages/common.pages";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    children: [...HeroesRoutes],
+    children: [...CharactersRoutes],
     errorElement: <ErrorPage />,
   },
   {

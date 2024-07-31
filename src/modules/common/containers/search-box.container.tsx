@@ -5,7 +5,7 @@ import SearchForm from "../components/search-form.component";
 import ResultsCountComponent from "../components/results-count.component";
 
 const SearchBoxContainer = () => {
-  //   const { t } = useTranslation("heroes");
+  //   const { t } = useTranslation("character");
   return (
     <section className="search_box__root">
       <span className="search_box__input_wrapper">

@@ -7,7 +7,7 @@ interface IResultsCount {
 }
 
 const ResultsCount = ({ count }: IResultsCount) => {
-  const { t } = useTranslation("heroes");
+  const { t } = useTranslation("character");
   return (
     <p className="search_box__results_label">{`${count} ${t(
       "resultsCount.label"

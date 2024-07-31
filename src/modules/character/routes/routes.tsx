@@ -1,5 +1,9 @@
 import { RouteObject } from "react-router-dom";
-import { DetailsPage, FavoritesPage, MainPage } from "../pages/heroes.pages";
+import {
+  DetailsPage,
+  FavoritesPage,
+  MainPage,
+} from "../pages/characters.pages";
 
 const routes: RouteObject[] = [
   {
