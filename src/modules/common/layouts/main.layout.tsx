@@ -1,15 +1,15 @@
-import { memo } from "react";
+import { memo, Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import NavbarContainer from "../containers/navbar.container";
-import "../styles/main-layout.css";
+import SpinnerComponent from "../components/spinner.component";
 
 const MainLayout = () => {
   return (
     <section>
       <NavbarContainer />
-      <section className="main_layout__content_container">
+      <Suspense fallback={<SpinnerComponent />}>
         <Outlet />
-      </section>
+      </Suspense>
     </section>
   );
 };
