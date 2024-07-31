@@ -18,11 +18,13 @@
     "react-error-boundary": "^4.0.13",
     "react-helmet": "^6.1.0",
     "react-i18next": "^15.0.0",
-    "react-router-dom": "^6.25.1"
+    "react-router-dom": "^6.25.1",
+    "react-world-flags": "^1.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-world-flags": "^1.4.5",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",

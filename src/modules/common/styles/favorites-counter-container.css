@@ -15,12 +15,3 @@
   width: 24px;
   height: 21.68px;
 }
-
-.favorite_counter__label {
-  font-weight: 400;
-  font-size: var(--fs-lg);
-  line-height: 18.75px;
-  width: 8px;
-  height: 19px;
-  color: var(--font-color-contrast);
-}

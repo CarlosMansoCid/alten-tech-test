@@ -6,4 +6,19 @@ const langResources = {
   en: en,
 };
 
+export type TLang = {
+  lang: string;
+  code: string;
+};
+
+export const langList: TLang[] = [
+  {
+    lang: "es",
+    code: "es",
+  },
+  {
+    lang: "en",
+    code: "us",
+  },
+];
 export default langResources;

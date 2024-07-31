@@ -1,18 +1,19 @@
 import { useState } from "react";
-import { langResources, i18n } from "../../../settings";
+import { i18n } from "../../../settings";
+import { langList } from "../../../settings/langResources";
 
 const useChangeLang = () => {
-  const values = Object.keys(langResources);
   const [selectedLang, setSelectedLang] = useState<string>(
     localStorage.getItem("i18nextLng") as string | "es"
   );
-  const changeLang = async (key: string) => {
-    await i18n.changeLanguage(key);
-    setSelectedLang(key);
+  const changeLang = (key: string) => {
+    i18n.changeLanguage(key).then(() => {
+      setSelectedLang(key);
+    });
   };
 
   return {
-    values,
+    langList,
     selectedLang,
     changeLang,
   };

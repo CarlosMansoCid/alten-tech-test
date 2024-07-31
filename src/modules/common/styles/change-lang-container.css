@@ -1,0 +1,64 @@
+.change_lang__root {
+  width: 55px;
+  height: 37.68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--p-xs);
+  margin-right: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.change_lang__icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color-contrast);
+  width: 24px;
+  transition: var(--transition-time);
+  height: 21.68px;
+}
+
+.change_lang__button > p {
+  transition: var(--transition-time);
+}
+
+.change_lang__lang_list {
+  position: absolute;
+  top: 30px;
+  height: fit-content;
+  background-color: var(--surface-color);
+  padding: var(--p-xs);
+  width: fit-content;
+  list-style: none;
+  border-bottom: solid 5px;
+  color: var(--font-color-contrast);
+  border-color: var(--primary-color);
+  width: max-content;
+  margin: 0px;
+  display: none;
+  left: 0;
+}
+
+.change_lang__flag_container {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.change_lang__lang_list > li {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 20px;
+}
+.change_lang__lang_list > li > p {
+  margin: 0px;
+  width: fit-content;
+}
+.change_lang__root:hover > ul {
+  display: block;
+}

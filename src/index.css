@@ -4,7 +4,7 @@
   --surface-color: #000000;
   --bg-color: #ffffff;
   --inactive-color: #aaaaaa;
-  --surface-light-color: #d9d9d9;
+  --surface-color-ligth: #d9d9d9;
   --font-color-contrast: #ffffff;
 
   /* Padding */
@@ -28,8 +28,12 @@
   --bp-lg: 1200px;
   --bp-xl: 1408px;
 
+  /* Transition */
+  --transition-time: 0.3s;
+
   accent-color: var(--primary-color);
   font-family: "Roboto Condensed", sans-serif;
+  min-height: 100vh;
 }
 
 body,
@@ -37,6 +41,7 @@ html {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 * {
