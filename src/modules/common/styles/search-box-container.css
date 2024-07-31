@@ -1,6 +1,7 @@
 .search_box__root {
   height: 77px;
   padding: var(--p-sm) 0;
+  margin-bottom: var(--m-sm);
 }
 
 .search_box__input_wrapper {

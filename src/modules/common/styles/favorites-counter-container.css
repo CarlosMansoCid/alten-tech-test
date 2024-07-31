@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--p-xs);
+  cursor: pointer;
 }
-
 .favorite_counter__icon_container {
   display: flex;
   align-items: center;
