@@ -13,5 +13,8 @@
   },
   "noResults": {
     "title": "Empty results"
+  },
+  "errors": {
+    "query": "Error on data fetching"
   }
 }

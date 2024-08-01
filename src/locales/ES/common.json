@@ -13,5 +13,8 @@
   },
   "noResults": {
     "title": "No hay resultados"
+  },
+  "errors": {
+    "query": "Ha ocurrido un error al obtener los datos"
   }
 }

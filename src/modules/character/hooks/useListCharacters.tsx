@@ -25,5 +25,6 @@ export const useListCharacters = () => {
     queryKey: [CHARACTER_LIST_KEY, filters],
     queryFn: fetchFn(),
   });
+  if (query?.data?.message) throw new Error("");
   return query;
 };

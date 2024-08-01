@@ -12,20 +12,3 @@
   color: var(--primary-color);
   margin-bottom: 4rem;
 }
-.error_page__link {
-  text-decoration: none;
-  padding: var(--p-md) var(--p-xl);
-  background-color: var(--font-color-contrast);
-  color: var(--primary-color);
-  transition: var(--transition-time);
-  font-weight: 400;
-}
-
-.error_page__link:hover {
-  background-color: var(--primary-color);
-  color: var(--font-color-contrast);
-}
-.error_page__link:active {
-  background-color: var(--font-color-contrast);
-  color: var(--primary-color);
-}

@@ -5,15 +5,18 @@ import CharacterListFallback from "../components/character-list-fallback.compone
 import { useCharacterContext } from "../contexts/useCharacterContext";
 import "../../common/styles/section-p-container.css";
 import { FavoritesPage } from "./characters.pages";
+import QueriesErrorBoundary from "../../common/containers/queries-error-boundary";
 
 const MainPage = () => {
   const { showFavorites } = useCharacterContext();
   return (
     <section className="section_p__content_container">
       <MainPageSearchBoxContainer />
-      <Suspense fallback={<CharacterListFallback />}>
-        {showFavorites ? <FavoritesPage /> : <CharacterListContainer />}
-      </Suspense>
+      <QueriesErrorBoundary>
+        <Suspense fallback={<CharacterListFallback />}>
+          {showFavorites ? <FavoritesPage /> : <CharacterListContainer />}
+        </Suspense>
+      </QueriesErrorBoundary>
     </section>
   );
 };

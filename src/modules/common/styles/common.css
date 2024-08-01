@@ -8,3 +8,21 @@
 .section_details__content_container {
   padding: 0;
 }
+
+.button {
+  text-decoration: none;
+  padding: var(--p-md) var(--p-xl);
+  background-color: var(--font-color-contrast);
+  color: var(--primary-color);
+  transition: var(--transition-time);
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--font-color-contrast);
+}
+.button:active {
+  background-color: var(--font-color-contrast);
+  color: var(--primary-color);
+}
