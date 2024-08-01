@@ -1,0 +1,20 @@
+{
+  "langs": {
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "errorPage": {
+    "title": "Algo no fue bien:",
+    "linkLabel": "Volver al inicio"
+  },
+  "notFound": {
+    "title": "Erron 404 - Página no encontrada",
+    "linkLabel": "Volver al inicio"
+  },
+  "noResults": {
+    "title": "No hay resultados"
+  },
+  "errors": {
+    "query": "Ha ocurrido un error al obtener los datos"
+  }
+}

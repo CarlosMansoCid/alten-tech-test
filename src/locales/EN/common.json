@@ -1,0 +1,20 @@
+{
+  "langs": {
+    "es": "Spanish",
+    "en": "English"
+  },
+  "errorPage": {
+    "title": "Something went wrong:",
+    "linkLabel": "Comeback to home"
+  },
+  "notFound": {
+    "title": "Erron 404 - Page not Found",
+    "linkLabel": "Comeback to home"
+  },
+  "noResults": {
+    "title": "Empty results"
+  },
+  "errors": {
+    "query": "Error on data fetching"
+  }
+}
