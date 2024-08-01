@@ -8,7 +8,7 @@ export const characterListMock: ICharacter[] = [
                      Adam Warlock is a unique being who uses his immense and formidable powers to safeguard the universe.`,
     modified: new Date(),
     thumbnail: {
-      path: "images/adam-warlock.png",
+      path: "/images/adam-warlock.png",
       extension: ".png",
     },
   },

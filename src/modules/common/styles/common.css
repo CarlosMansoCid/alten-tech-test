@@ -4,3 +4,7 @@
   line-height: 37.5px;
   margin: var(--m-sm) 0;
 }
+
+.section_details__content_container {
+  padding: 0;
+}

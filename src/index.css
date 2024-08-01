@@ -35,6 +35,8 @@
   /* Margin */
   --m-xs: 8px;
   --m-sm: 12px;
+  --m-md: 16px;
+  --m-lg: 24px;
 
   accent-color: var(--primary-color);
   font-family: "Roboto Condensed", sans-serif;
