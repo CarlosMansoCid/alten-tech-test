@@ -17,13 +17,13 @@
   background-color: red;
 }
 
-.search_box__input_wrapper > form {
+.search_box__input_wrapper_form {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.search_box__input_wrapper > form > input {
+.search_box__input_wrapper_form > input {
   width: 100% !important;
   border: none;
   outline: none;

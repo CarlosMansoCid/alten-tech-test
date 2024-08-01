@@ -10,5 +10,8 @@
   "notFound": {
     "title": "Erron 404 - Página no encontrada",
     "linkLabel": "Volver al inicio"
+  },
+  "noResults": {
+    "title": "No hay resultados"
   }
 }

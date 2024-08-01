@@ -1,24 +1,21 @@
 import { memo } from "react";
-import "../../common/styles/common.css";
 import { useParams } from "react-router-dom";
 import DetailsHeaderContainer from "../containers/details-header.container";
-import { characterListMock } from "../mock/characterList.mock";
 import { ICharacter } from "../interfaces/ICharacter";
 import ComicsListContainer from "../containers/comics-list.container";
+import { useCharacterContext } from "../contexts/useCharacterContext";
+import "../../common/styles/common.css";
 
 const DetailsPage = () => {
   const { id } = useParams();
-  console.log(id);
+  const { characters } = useCharacterContext();
+  const chatacter = characters?.filter((character: ICharacter) => {
+    return String(character.id) === id;
+  })[0];
   return (
     <>
       <section className="section_details__content_container">
-        <DetailsHeaderContainer
-          character={
-            characterListMock.filter(
-              (character: ICharacter) => character.id === Number(id)
-            )[0]
-          }
-        />
+        <DetailsHeaderContainer character={chatacter} />
       </section>
       <ComicsListContainer />
     </>

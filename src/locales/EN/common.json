@@ -10,5 +10,8 @@
   "notFound": {
     "title": "Erron 404 - Page not Found",
     "linkLabel": "Comeback to home"
+  },
+  "noResults": {
+    "title": "Empty results"
   }
 }

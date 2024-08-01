@@ -1,18 +1,20 @@
 import { memo } from "react";
 import Favorite from "../components/favorite.component";
-import "../styles/favorites-counter-container.css";
 import NavbarLabel from "../components/navbar-label.component";
-import { useNavigate } from "react-router-dom";
+import { useCharacterContext } from "../../character/contexts/useCharacterContext";
+import "../styles/favorites-counter-container.css";
 
 const FavoriteCounterContainer = () => {
-  const navigate = useNavigate();
+  const { favorites, toggleShowFavorites, showFavorites } =
+    useCharacterContext();
+  const action = () =>
+    favorites.length > 0
+      ? toggleShowFavorites(!showFavorites)
+      : toggleShowFavorites(false);
   return (
-    <div
-      className="favorite_counter__root"
-      onClick={() => navigate("/favorites")}
-    >
-      <Favorite isFavorite={true} />
-      <NavbarLabel label="3" />
+    <div className="favorite_counter__root" onClick={action}>
+      <Favorite action={action} isFavorite={favorites.length > 0} />
+      <NavbarLabel label={favorites.length || 0} />
     </div>
   );
 };

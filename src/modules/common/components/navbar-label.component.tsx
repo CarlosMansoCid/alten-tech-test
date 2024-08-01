@@ -2,7 +2,7 @@ import { memo } from "react";
 import "../styles/navbar-label.css";
 
 interface INavbarLabel {
-  label: string;
+  label: string | number;
 }
 
 const NavbarLabel = ({ label }: INavbarLabel) => {
