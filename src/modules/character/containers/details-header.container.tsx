@@ -14,17 +14,19 @@ const DetailsHeaderContainer = ({ character }: IDetailsHeaderContainer) => {
   return (
     <section className="details_header__root">
       <article className="details_header__info_container">
-        <figure
-          className="details_header__image"
-          style={{
-            background: `url(${thumbnail?.path})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          {!thumbnail?.path && <ImageIcon />}
-        </figure>
+        <div className="details_header__image_container">
+          <figure
+            className="details_header__image"
+            style={{
+              background: `url(${thumbnail?.path})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {!thumbnail?.path && <ImageIcon />}
+          </figure>
+        </div>
         <article className="details_header__details_container">
           <div className="details_header__title_and_favorite_container">
             <LongTextComponent
