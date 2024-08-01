@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "autoprefixer": "postcss dist/assets/*.css --use autoprefixer -d dist/assets/",
+    "build": "tsc -b && vite build && npm run autoprefixer"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.15",
@@ -35,6 +36,8 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   }
