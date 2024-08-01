@@ -1,0 +1,12 @@
+.set_favorite_button__root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color-contrast);
+  width: 24px;
+  transition: var(--transition-time);
+  height: 21.68px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}

@@ -11,7 +11,7 @@ const FavoriteCounterContainer = () => {
       className="favorite_counter__root"
       onClick={() => navigate("/favorites")}
     >
-      <Favorite isActive={true} />
+      <Favorite isFavorite={true} />
       <NavbarLabel label="3" />
     </div>
   );

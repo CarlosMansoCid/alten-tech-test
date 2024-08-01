@@ -9,6 +9,7 @@ const FavoriteIcon = ({ ...rest }: IFavoriteIcon) => {
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       {...rest}
+      id="favorite-icon"
     >
       <path
         fillRule="evenodd"
