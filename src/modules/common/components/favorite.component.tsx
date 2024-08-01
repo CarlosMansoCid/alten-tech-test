@@ -1,9 +1,18 @@
-import { memo, MouseEvent } from "react";
+import {
+  ButtonHTMLAttributes,
+  DetailedHTMLProps,
+  memo,
+  MouseEvent,
+} from "react";
 import FavoriteIcon from "../icons/favorite.icon";
 import OutlinedHeartIcon from "../icons/outlined-heart.icon";
 import "../styles/favorites-counter-container.css";
 
-interface IFavorite {
+interface IFavorite
+  extends DetailedHTMLProps<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   isFavorite: boolean;
   width?: string | number;
   height?: string | number;
@@ -16,6 +25,7 @@ const Favorite = ({
   width = "24px",
   height = "21.68px",
   action = () => {},
+  ...rest
 }: IFavorite) => {
   const onAction = (e: MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
@@ -33,6 +43,7 @@ const Favorite = ({
           ? "var(--primary-color)"
           : "var(--font-color-contrast)",
       }}
+      {...rest}
     >
       {isFavorite ? <FavoriteIcon /> : <OutlinedHeartIcon />}
     </button>

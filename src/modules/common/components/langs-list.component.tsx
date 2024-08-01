@@ -1,7 +1,7 @@
 import { memo } from "react";
-import "../styles/change-lang-container.css";
 import LangTag from "./lang-tag.component";
 import { TLang } from "../../../settings/langResources";
+import "../styles/change-lang-container.css";
 
 interface ILangList {
   langs: TLang[];

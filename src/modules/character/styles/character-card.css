@@ -1,10 +1,16 @@
-.character_card__root {
+.character_card__root,
+.character_card__root_skelleton {
   height: 245.97px;
   width: 188.57px;
   background-color: var(--surface-color);
   position: relative;
   transition: var(--transition-time);
   clip-path: polygon(100% 0, 100% 94.78%, 93.19% 100%, 0 100%, 0 0);
+}
+.character_card__root_skelleton,
+.character_card__root_skelleton > figure,
+.character_card__root_skelleton > div > button {
+  cursor: progress;
 }
 
 .character_card__root:hover {

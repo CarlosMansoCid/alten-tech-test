@@ -8,7 +8,9 @@ const MainLayout = () => {
     <section>
       <NavbarContainer />
       <Suspense fallback={<SpinnerComponent />}>
-        <Outlet />
+        <section style={{ marginTop: "84px" }}>
+          <Outlet />
+        </section>
       </Suspense>
     </section>
   );

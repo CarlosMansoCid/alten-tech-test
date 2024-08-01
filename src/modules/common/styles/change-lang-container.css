@@ -39,6 +39,7 @@
   margin: 0px;
   display: none;
   left: 0;
+  z-index: 999;
 }
 
 .change_lang__flag_container {
