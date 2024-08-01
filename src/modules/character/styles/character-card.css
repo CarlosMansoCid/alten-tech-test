@@ -16,6 +16,11 @@
 .character_card__root:hover {
   background-color: var(--primary-color);
 }
+.character_card__root:hover
+  > .character_card__info_container
+  > .favorite_counter__icon_container {
+  color: var(--font-color-contrast) !important;
+}
 .character_card__image_container {
   height: 189.97px;
   width: 100%;
