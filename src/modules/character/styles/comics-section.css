@@ -1,0 +1,19 @@
+.comics_list__root {
+  width: 960px;
+  border: solid 1px red;
+  margin: 0 auto;
+  padding: var(--p-xl) 0;
+  margin-bottom: var(--m-lg);
+}
+
+@media (width < 993px) {
+  .comics_list__root {
+    padding: var(--p-xl) 0 var(--p-xl) var(--p-xl);
+  }
+}
+
+@media (width < 577px) {
+  .comics_list__root {
+    padding: var(--p-xl) var(--p-md);
+  }
+}

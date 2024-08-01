@@ -1,0 +1,14 @@
+.error_page__root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--surface-color);
+}
+
+.error_page__title {
+  color: var(--primary-color);
+  margin-bottom: 4rem;
+}

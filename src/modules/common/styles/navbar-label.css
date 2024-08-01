@@ -1,0 +1,14 @@
+.navbar_label__root {
+  font-weight: 400;
+  font-size: var(--fs-lg);
+  line-height: 18.75px;
+  width: 8px;
+  height: 19px;
+  color: var(--font-color-contrast);
+}
+
+.navbar_actions__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

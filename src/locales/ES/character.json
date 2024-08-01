@@ -1,0 +1,11 @@
+{
+  "searchInput": {
+    "placeholder": "BUSCAR UN PERSONAJE"
+  },
+  "resultsCount": {
+    "label": "RESULTADOS"
+  },
+  "favoritesPage": {
+    "title": "FAVORITOS"
+  }
+}
