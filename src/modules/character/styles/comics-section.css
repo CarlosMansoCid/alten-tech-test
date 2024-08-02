@@ -6,13 +6,13 @@
   margin-bottom: var(--m-lg);
 }
 
-@media (width < 993px) {
+@media (max-width: 993px) {
   .comics_list__root {
     padding: var(--p-xl) 0 var(--p-xl) var(--p-xl);
   }
 }
 
-@media (width < 577px) {
+@media (max-width: 577px) {
   .comics_list__root {
     padding: var(--p-xl) var(--p-md);
   }

@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import SearchIcon from "../icons/search.icon";
 import { ChangeEvent, memo } from "react";
-import "../styles/search-box-container.css";
 import { useCharacterContext } from "../../character/contexts/useCharacterContext";
+import "../styles/search-box-container.css";
 
 const SearchForm = () => {
   const { t } = useTranslation("character");
@@ -10,7 +10,7 @@ const SearchForm = () => {
   return (
     <span className="search_box__input_wrapper_form">
       <span className="search_box__icon_button">
-        <SearchIcon />
+        <SearchIcon height={"21.68px"} width={"24px"} />
       </span>
       <input
         placeholder={t("searchInput.placeholder")}

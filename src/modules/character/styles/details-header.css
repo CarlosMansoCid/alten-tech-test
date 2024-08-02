@@ -59,7 +59,7 @@
   font-size: var(--fs-md);
   line-height: 18.75px;
 }
-@media (width < 993px) {
+@media (max-width: 993px) {
   .details_header__root {
     height: 278px;
   }
@@ -79,7 +79,7 @@
   }
 }
 
-@media (width < 577px) {
+@media (max-width: 577px) {
   .details_header__root {
     height: 607.89px;
   }
