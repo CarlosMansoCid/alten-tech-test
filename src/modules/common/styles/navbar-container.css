@@ -12,7 +12,7 @@
   position: fixed;
 }
 
-@media (width < 576px) {
+@media (max-width: 576px) {
   .navbar_container__root {
     padding: var(--p-md);
   }

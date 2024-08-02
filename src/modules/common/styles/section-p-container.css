@@ -2,7 +2,7 @@
   padding: var(--p-xl);
 }
 
-@media (width < 576px) {
+@media (max-width: 576px) {
   .section_p__content_container {
     padding: var(--p-md);
   }

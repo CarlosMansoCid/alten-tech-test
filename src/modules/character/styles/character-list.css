@@ -5,13 +5,13 @@
   gap: 12px;
 }
 
-@media (width < 769px) {
+@media (max-width: 769px) {
   .character_list__root {
     grid-template-columns: repeat(auto-fill, minmax(172.5px, 1fr));
   }
 }
 
-@media (width < 577px) {
+@media (max-width: 577px) {
   .character_list__root {
     grid-template-columns: repeat(2, minmax(172.5px, 1fr));
     place-items: center;
