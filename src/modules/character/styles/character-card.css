@@ -55,7 +55,7 @@
   width: 80% !important;
 }
 
-@media (width < 769px) {
+@media (max-width: 769px) {
   .character_card__root {
     width: 172.5px;
     clip-path: polygon(100% 0, 100% 94.78%, 92.54% 100%, 0 100%, 0 0);
