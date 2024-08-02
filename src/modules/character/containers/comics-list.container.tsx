@@ -1,16 +1,20 @@
-import { memo } from "react";
-import "../styles/comics-section.css";
+import { memo, Suspense } from "react";
 import Title from "../../common/components/title.component";
+import { useParams } from "react-router-dom";
+import ComicsList from "../components/comics-list.component";
+import "../styles/comics-section.css";
 
-interface IComicsListContainer {
-  comics?: [];
-}
+const ComicsListContainer = () => {
+  const { id } = useParams();
 
-const ComicsListContainer = ({ comics }: IComicsListContainer) => {
-  console.log(comics);
   return (
     <section className="comics_list__root">
       <Title label={"Comics"} />
+      <section className="comic_list__container">
+        <Suspense fallback={<div>Cargando comics</div>}>
+          <ComicsList id={id as string} />
+        </Suspense>
+      </section>
     </section>
   );
 };

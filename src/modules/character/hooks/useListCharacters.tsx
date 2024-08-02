@@ -11,9 +11,11 @@ export const useListCharacters = () => {
 
   const fetchFn = useCallback(
     () => async () => {
-      const res = await CharacterService.get(
-        `&limit=50${filters?.name ? `&nameStartsWith=${filters.name}` : ""}`
-      );
+      const res = await CharacterService.get({
+        params: `&limit=50${
+          filters?.name ? `&nameStartsWith=${filters.name}` : ""
+        }`,
+      });
       const json: IResponse<ICharacter> = await res.json();
       setCharacters(json?.data?.results as ICharacter[]);
       return json;

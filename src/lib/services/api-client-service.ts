@@ -1,5 +1,10 @@
 import { generateKey } from "../../modules/common/utils/generate-key";
 
+interface IApiOptions {
+  params?: string;
+  path?: string;
+}
+
 export default class ApiClientService<Type> {
   private baseUrl = "";
   private basePath = "";
@@ -9,6 +14,6 @@ export default class ApiClientService<Type> {
   }
   private key = generateKey();
 
-  get = (params?: string): Promise<Type | Response> =>
-    fetch(`${this.baseUrl}${this.basePath}` + this.key + params || "");
+  get = ({ params = "", path = "" }: IApiOptions): Promise<Type | Response> =>
+    fetch(`${this.baseUrl}${this.basePath}${path}` + "?" + this.key + params);
 }
