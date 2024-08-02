@@ -11,6 +11,8 @@ type TCharactersContext = {
   toggleShowFavorites: Dispatch<SetStateAction<boolean>>;
   filters: TFilters;
   setFilters: Dispatch<SetStateAction<TFilters>>;
+  characterDetails: ICharacter;
+  setCharacterDetails: Dispatch<SetStateAction<ICharacter>>;
 };
 const characterContextDefaultValues: TCharactersContext = {
   characters: [],
@@ -21,6 +23,8 @@ const characterContextDefaultValues: TCharactersContext = {
   toggleShowFavorites: () => {},
   filters: { name: "" },
   setFilters: () => {},
+  characterDetails: {} as ICharacter,
+  setCharacterDetails: () => {},
 };
 
 export const CharacterContext = createContext(characterContextDefaultValues);

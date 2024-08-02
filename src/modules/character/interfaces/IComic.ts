@@ -1,0 +1,31 @@
+import { IComicDate } from "./IComicDate";
+import { IComicSumary } from "./IComicSumary";
+import { IImage } from "./IImage";
+import { ISeriesSumary } from "./ISeriesSumary";
+export interface IComic {
+  id: number;
+  digitalId: number;
+  title: string;
+  issueNumber: number;
+  variantDescription: string;
+  description: string;
+  modified: Date;
+  isbn: string;
+  upc: string;
+  diamondCode: string;
+  ean: string;
+  issn: string;
+  format: string;
+  pageCount: number;
+  textObjects: [];
+  resourceURI: string;
+  urls: [];
+  series: ISeriesSumary;
+  variants: IComicSumary[];
+  collections: IComicSumary[];
+  collectedIssues: IComicSumary[];
+  dates: IComicDate[];
+  prices: [];
+  thumbnail: IImage;
+  images: IImage[];
+}

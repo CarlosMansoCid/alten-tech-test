@@ -4,5 +4,5 @@ import { IResponse } from "../interfaces/IResponse";
 
 class CharacterServiceClass extends ApiClientService<IResponse<ICharacter>> {}
 
-const CharacterService = new CharacterServiceClass("characters?");
+const CharacterService = new CharacterServiceClass("characters");
 export default CharacterService;
