@@ -11,8 +11,9 @@ interface ILongTitle
   isTitle?: boolean;
 }
 const LongTitle = ({ label, classnames, isTitle = false }: ILongTitle) => {
-  if (isTitle)
+  if (isTitle) {
     return <h1 className={`long_text__root  ${classnames}`}>{label}</h1>;
+  }
   return <h2 className={`long_text__root  ${classnames}`}>{label}</h2>;
 };
 

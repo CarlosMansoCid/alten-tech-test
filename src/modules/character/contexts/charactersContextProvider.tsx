@@ -11,6 +11,9 @@ export const CharacterContextProvider = ({
   const [favorites, setFavorites] = useState<ICharacter[]>([]);
   const [showFavorites, toggleShowFavorites] = useState<boolean>(false);
   const [filters, setFilters] = useState<TFilters>({ name: "" });
+  const [characterDetails, setCharacterDetails] = useState<ICharacter>(
+    {} as ICharacter
+  );
 
   return (
     <CharacterContext.Provider
@@ -23,6 +26,8 @@ export const CharacterContextProvider = ({
         toggleShowFavorites,
         filters,
         setFilters,
+        characterDetails,
+        setCharacterDetails,
       }}
     >
       {children}
