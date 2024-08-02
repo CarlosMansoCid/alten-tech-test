@@ -52,7 +52,20 @@ html {
   overflow-x: hidden;
   min-height: 100vh;
 }
-
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  scrollbar-width: none;
+}
+html {
+  scrollbar-color: var(--primary-color) var(--surface-color-ligth);
+}
+html::-webkit-scrollbar-track {
+  background: var(--surface-color-ligth);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
 }

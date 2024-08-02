@@ -1,13 +1,12 @@
 import { memo } from "react";
-import "../styles/comics-section.css";
 import { IComic } from "../interfaces/IComic";
+import "../styles/comics-section.css";
 
 interface IComicCard {
   comic: IComic;
 }
 
 const ComicCard = ({ comic }: IComicCard) => {
-  console.log(comic.dates);
   const date =
     new Date(comic?.dates[0]?.date)?.toISOString()?.substring(0, 4) || "";
   return (
