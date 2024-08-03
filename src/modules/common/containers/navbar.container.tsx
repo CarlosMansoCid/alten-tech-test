@@ -1,8 +1,8 @@
 import { memo } from "react";
-import "../styles/navbar-container.css";
 import LogoComponent from "../components/logo.component";
 import FavoriteCounterContainer from "./favorite-counter.container";
 import ChangeLangContainer from "./change-lang.container";
+import "../styles/navbar-container.css";
 
 const NavbarContainer = () => {
   return (

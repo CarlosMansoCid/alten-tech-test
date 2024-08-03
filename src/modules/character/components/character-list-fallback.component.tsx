@@ -4,11 +4,15 @@ import CharacterCardSkelleton from "./character-card.skelleton";
 
 const CharacterListFallback = () => {
   return (
-    <section className="character_list__root">
+    <ul className="character_list__root" aria-busy>
       {new Array(27).fill("").map(() => {
-        return <CharacterCardSkelleton key={`${crypto.randomUUID()}`} />;
+        return (
+          <li>
+            <CharacterCardSkelleton key={`${crypto.randomUUID()}`} />
+          </li>
+        );
       })}
-    </section>
+    </ul>
   );
 };
 

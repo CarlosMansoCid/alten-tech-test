@@ -6,13 +6,14 @@ import "../styles/search-box-container.css";
 
 const SearchForm = () => {
   const { t } = useTranslation("character");
-  const { setFilters } = useCharacterContext();
+  const { setFilters, filters } = useCharacterContext();
   return (
     <span className="search_box__input_wrapper_form">
       <span className="search_box__icon_button">
         <SearchIcon height={"21.68px"} width={"24px"} />
       </span>
       <input
+        value={filters?.name}
         placeholder={t("searchInput.placeholder")}
         onChange={(e: ChangeEvent<HTMLInputElement>) =>
           setFilters({ name: e.target.value })

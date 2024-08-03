@@ -13,6 +13,7 @@ interface IComicsList {
 const ComicsList = ({ id }: IComicsList) => {
   const { data } = useGetCharacterComics(id as string);
   const comicList = data?.data?.results || [];
+
   if (comicList?.length === 0) {
     return <EmptyResults />;
   }

@@ -5,7 +5,7 @@ const EmptyResults = () => {
   const { t } = useTranslation("common");
   return (
     <div>
-      <h2>{t("noResults.title")}: (</h2>
+      <h2 data-testid="no-results-text">{t("noResults.title")}</h2>
     </div>
   );
 };

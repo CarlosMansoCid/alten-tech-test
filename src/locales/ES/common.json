@@ -16,5 +16,8 @@
   },
   "errors": {
     "query": "Ha ocurrido un error al obtener los datos"
+  },
+  "buttons": {
+    "tryAgain": "Intentar de nuevo"
   }
 }

@@ -16,6 +16,7 @@ const CharacterCard = ({ character }: ICharacterCard) => {
 
   return (
     <article
+      aria-label={character.name}
       className="character_card__root"
       onClick={() => navigate(`/${character.id}/details`)}
     >

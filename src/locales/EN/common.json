@@ -16,5 +16,8 @@
   },
   "errors": {
     "query": "Error on data fetching"
+  },
+  "buttons": {
+    "tryAgain": "Try again"
   }
 }
