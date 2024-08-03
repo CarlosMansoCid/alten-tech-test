@@ -4,6 +4,7 @@ import NavbarLabel from "./navbar-label.component";
 import { TLang } from "../../../settings/langResources";
 import { useTranslation } from "react-i18next";
 import "../styles/change-lang-container.css";
+
 interface ILangFlag {
   lang: TLang;
   action: () => void;
@@ -13,10 +14,13 @@ const LangFlag = ({ lang, action }: ILangFlag) => {
   const { t } = useTranslation("common");
   return (
     <li onClick={action}>
-      <div className="change_lang__flag_container">
-        <Flag code={lang.code} />
+      <div
+        className="change_lang__flag_container"
+        data-testid="lang-flag-container"
+      >
+        <Flag code={lang.code} data-testid={`${lang.code}-flag`} />
       </div>
-      <NavbarLabel label={t(`langs.${lang.lang}`)} />
+      <NavbarLabel label={t(`langs.${lang.lang}`)} data-testid="lang-label" />
     </li>
   );
 };

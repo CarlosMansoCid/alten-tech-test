@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "autoprefixer": "postcss dist/assets/*.css --use autoprefixer -d dist/assets/",
     "build": "tsc -b && vite build && npm run autoprefixer",
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.15",
@@ -42,6 +42,7 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "jest-transform-css": "^6.0.1",
     "postcss": "^8.4.40",
     "postcss-cli": "^11.0.0",
     "ts-jest": "^29.2.4",
