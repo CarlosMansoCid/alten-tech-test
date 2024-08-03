@@ -6,13 +6,13 @@ import ChangeLangContainer from "./change-lang.container";
 
 const NavbarContainer = () => {
   return (
-    <section className="navbar_container__root">
+    <header className="navbar_container__root">
       <LogoComponent />
       <div className="navbar_actions__container">
         <ChangeLangContainer />
         <FavoriteCounterContainer />
       </div>
-    </section>
+    </header>
   );
 };
 

@@ -3,7 +3,7 @@ import Flag from "react-world-flags";
 import NavbarLabel from "./navbar-label.component";
 import { TLang } from "../../../settings/langResources";
 import { useTranslation } from "react-i18next";
-
+import "../styles/change-lang-container.css";
 interface ILangFlag {
   lang: TLang;
   action: () => void;

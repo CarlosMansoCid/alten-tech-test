@@ -25,7 +25,7 @@ const FavoriteCounterContainer = () => {
     }
   };
   return (
-    <div className="favorite_counter__root" onClick={action}>
+    <div className="favorite_counter__root" onClick={action} role="button">
       <Favorite action={action} isFavorite={favorites.length > 0} />
       <NavbarLabel label={favorites.length || 0} />
     </div>

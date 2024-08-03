@@ -11,7 +11,9 @@ const ChatactersList = ({ characters }: ICharactersList) => {
     <>
       {characters?.map((character: ICharacter) => {
         return (
-          <CharacterCardComponent character={character} key={character.id} />
+          <li>
+            <CharacterCardComponent character={character} key={character.id} />
+          </li>
         );
       })}
     </>

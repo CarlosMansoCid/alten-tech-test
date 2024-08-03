@@ -10,7 +10,7 @@ const ErrorOnFetchElement = ({ resetErrorBoundary }: IErrorOnFetchElement) => {
   const { t } = useTranslation("common");
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <h2>{t("errors.query")}</h2>
+      <h2 aria-errormessage={t("errors.query")}>{t("errors.query")}</h2>
       <button onClick={resetErrorBoundary} className="button">
         Try again
       </button>

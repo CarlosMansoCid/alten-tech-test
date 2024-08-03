@@ -8,9 +8,9 @@ const CharacterListContainer = () => {
   useListCharacters();
   const { characters } = useCharacterContext();
   return (
-    <section className="character_list__root">
+    <ul className="character_list__root" role="list">
       <CharactersList characters={characters || []} />
-    </section>
+    </ul>
   );
 };
 

@@ -20,6 +20,7 @@ const CharacterCard = ({ character }: ICharacterCard) => {
       onClick={() => navigate(`/${character.id}/details`)}
     >
       <figure
+        role="figure"
         className="character_card__image_container"
         style={{
           background: `url(${thumbnail?.path}.${thumbnail?.extension})`,
