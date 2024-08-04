@@ -16,7 +16,7 @@ const LangFlag = ({ lang, action }: ILangFlag) => {
     <li
       onClick={action}
       data-testid={"lang-tag"}
-      style={{ maxHeight: "50px", display: "relative", overflow: "hidden" }}
+      style={{ maxHeight: "50px", overflow: "hidden" }}
     >
       <div className="change_lang__flag_container">
         <Flag code={lang.code} role="img" />
