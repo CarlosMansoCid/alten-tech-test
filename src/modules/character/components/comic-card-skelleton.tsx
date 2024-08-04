@@ -9,17 +9,17 @@ const ComicCardSkelleton = () => {
         <Skelleton />
       </div>
       <div className="comic_card__info_container ">
-        <p className="comic_card__title">
+        <div className="comic_card__title">
           <Skelleton style={{ width: "90%", height: "16px" }} />
           <Skelleton
             style={{ width: "80%", height: "16px", marginTop: "5px" }}
           />
-        </p>
-        <p className="comic_card__date_tag">
+        </div>
+        <div className="comic_card__date_tag">
           <Skelleton
             style={{ width: "20%", height: "8px", marginTop: "5px" }}
           />
-        </p>
+        </div>
       </div>
     </article>
   );

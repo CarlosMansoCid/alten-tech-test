@@ -7,13 +7,16 @@ import { ICharacter } from "../interfaces/ICharacter";
 const DetailsHeaderContainer = lazy(
   () => import("../containers/details-header.container")
 );
+import DetailsHeaderSkelleton from "../components/details-header-skelleton";
+import Helmet from "react-helmet";
+import { useTranslation } from "react-i18next";
 import "../../common/styles/common.css";
 import "../styles/details-header.css";
-import DetailsHeaderSkelleton from "../components/details-header-skelleton";
 
 const DetailsPage = () => {
   const { characters } = useCharacterContext();
   const { id } = useParams();
+  const { t } = useTranslation();
 
   const character = useMemo(() => {
     return (
@@ -25,6 +28,9 @@ const DetailsPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{t("seo:detailsPage.title")}</title>
+      </Helmet>
       <section className="section_details__content_container">
         <section className="details_header__root">
           {character ? (
