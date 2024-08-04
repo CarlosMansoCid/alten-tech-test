@@ -16,20 +16,20 @@ describe("<SearchForm/>", () => {
     );
   });
   it("Component must display all elements", () => {
-    const searchInput = screen.getByRole("searchbox");
+    const searchInput = screen.getByRole("textbox");
     const icon = screen.getByRole("img");
     expect(searchInput).toBeInTheDocument();
     expect(icon).toBeInTheDocument();
   });
   it("Component must have the right placeholder", () => {
-    const searchBox = screen.getByRole("searchbox");
+    const searchBox = screen.getByRole("textbox");
     expect(searchBox).toHaveProperty("placeholder");
     expect(searchBox.getAttribute("placeholder")).toBe(
       characterLocale.searchInput.placeholder
     );
   });
   it("Component must work on user input", () => {
-    const searchInput = screen.getByRole("searchbox");
+    const searchInput = screen.getByRole("textbox");
 
     act(() => {
       fireEvent.change(searchInput, { target: { value: "Hulk" } });
