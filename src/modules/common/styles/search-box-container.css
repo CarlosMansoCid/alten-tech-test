@@ -30,7 +30,8 @@
   font-size: var(--fs-md);
   font-weight: 400;
   line-height: 18.75px;
-  height: 19px;
+  height: 19px !important;
+  background-color: transparent;
 }
 
 .search_box__icon_button {

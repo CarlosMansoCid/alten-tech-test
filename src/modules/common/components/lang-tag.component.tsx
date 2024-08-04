@@ -13,7 +13,11 @@ interface ILangFlag {
 const LangFlag = ({ lang, action }: ILangFlag) => {
   const { t } = useTranslation("common");
   return (
-    <li onClick={action} data-testid={"lang-tag"} style={{ maxHeight: "50px" }}>
+    <li
+      onClick={action}
+      data-testid={"lang-tag"}
+      style={{ maxHeight: "50px", display: "relative", overflow: "hidden" }}
+    >
       <div className="change_lang__flag_container">
         <Flag code={lang.code} role="img" />
       </div>
