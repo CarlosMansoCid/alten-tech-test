@@ -46,9 +46,17 @@ const Favorite = ({
       {...rest}
     >
       {isFavorite ? (
-        <FavoriteIcon width={width} height={height} />
+        <FavoriteIcon
+          width={width}
+          height={height}
+          data-testid="favorite-heart-icon-red"
+        />
       ) : (
-        <OutlinedHeartIcon width={width} height={height} />
+        <OutlinedHeartIcon
+          width={width}
+          height={height}
+          data-testid="favorite-heart-icon-outlined"
+        />
       )}
     </button>
   );

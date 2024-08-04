@@ -13,6 +13,7 @@ const ComicCard = ({ comic }: IComicCard) => {
     <article className="comic_card__root">
       <div className="comic_card__image_container ">
         <figure
+          role="figure"
           className="comic_card__image"
           style={{
             background: `url(${comic.thumbnail?.path}.${comic.thumbnail?.extension})`,

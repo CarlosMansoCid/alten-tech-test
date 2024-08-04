@@ -11,11 +11,11 @@ const ComicsListContainer = () => {
   return (
     <section className="comics_list__root">
       <Title label={"Comics"} />
-      <section className="comic_list__container">
+      <ul className="comic_list__container">
         <Suspense fallback={<ComicsListSkelleton />}>
           <ComicsList id={id as string} />
         </Suspense>
-      </section>
+      </ul>
     </section>
   );
 };
