@@ -4,13 +4,17 @@ import { useTranslation } from "react-i18next";
 import "../../common/styles/section-p-container.css";
 import "../styles/character-list.css";
 import FavoritesListContainer from "../containers/favorites-list.container";
+import { Helmet } from "react-helmet";
 
 const FavoritesPage = () => {
-  const { t } = useTranslation("character");
+  const { t } = useTranslation();
 
   return (
     <>
-      <Title label={t("favoritesPage.title")} />
+      <Helmet>
+        <title>{t("seo:favoritesSection.title")}</title>
+      </Helmet>
+      <Title label={t("character:favoritesPage.title")} />
       <FavoritesListContainer />
     </>
   );

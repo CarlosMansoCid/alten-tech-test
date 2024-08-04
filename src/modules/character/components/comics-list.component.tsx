@@ -20,7 +20,7 @@ const ComicsList = ({ id }: IComicsList) => {
     <>
       {comicList?.map((comic: IComic) => {
         return (
-          <li>
+          <li key={comic.id}>
             <ComicCard key={comic.id} comic={comic} />
           </li>
         );
