@@ -8,7 +8,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "autoprefixer": "postcss dist/assets/*.css --use autoprefixer -d dist/assets/",
-    "build": "tsc -b && vite build && npm run autoprefixer"
+    "build": "tsc -b && vite build && npm run autoprefixer",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.15",
@@ -23,6 +25,10 @@
     "react-world-flags": "^1.6.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
     "@types/md5": "^2.3.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -30,15 +36,19 @@
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.0.5",
     "autoprefixer": "^10.4.19",
     "cypress": "^13.13.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "happy-dom": "^14.12.3",
+    "jsdom": "^24.1.1",
     "postcss": "^8.4.40",
     "postcss-cli": "^11.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "vitest": "^2.0.5"
   }
 }

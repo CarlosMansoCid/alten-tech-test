@@ -11,7 +11,7 @@ interface ILangList {
 
 const LangList = ({ langs, action }: ILangList) => {
   return (
-    <ul className="change_lang__lang_list">
+    <ul className="change_lang__lang_list" data-testid="langs-list">
       {langs.map((lang: TLang) => {
         return (
           <LangTag
