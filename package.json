@@ -10,7 +10,8 @@
     "autoprefixer": "postcss dist/assets/*.css --use autoprefixer -d dist/assets/",
     "build": "tsc -b && vite build && npm run autoprefixer",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.15",
