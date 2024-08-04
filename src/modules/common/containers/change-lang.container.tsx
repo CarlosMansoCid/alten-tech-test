@@ -10,11 +10,19 @@ const ChangeLangContainer = () => {
   const { changeLang, selectedLang, langList } = useChangeLang();
   return (
     <div className="change_lang__root">
-      <div className="change_lang__icon_container">
+      <div
+        className="change_lang__icon_container"
+        role="img"
+        aria-label="flag-icon"
+        data-testid="global-icon"
+      >
         <GlobalIcon height={"21.68px"} width={"24px"} />
       </div>
       <span className="change_lang__button">
-        <NavbarLabel label={selectedLang.toUpperCase()} />
+        <NavbarLabel
+          label={selectedLang.toUpperCase()}
+          data-testid="selected-language-label"
+        />
       </span>
       <LangsList
         langs={langList.filter((value: TLang) => value.lang !== selectedLang)}
