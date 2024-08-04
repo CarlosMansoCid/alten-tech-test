@@ -8,7 +8,7 @@ const CharacterListFallback = () => {
       {new Array(27).fill("").map(() => {
         return (
           <li>
-            <CharacterCardSkelleton key={`${crypto.randomUUID()}`} />
+            <CharacterCardSkelleton key={`${crypto.randomUUID}`} />
           </li>
         );
       })}

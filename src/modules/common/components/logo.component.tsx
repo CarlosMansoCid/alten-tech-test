@@ -5,7 +5,7 @@ import "../styles/logo-component.css";
 const Logo = () => {
   return (
     <Link to={"/"} className="logo_component__root">
-      <img src="/images/marvel-logo.png" />
+      <img src="/images/marvel-logo.png" alt="logo" data-testid="logotipe" />
     </Link>
   );
 };
