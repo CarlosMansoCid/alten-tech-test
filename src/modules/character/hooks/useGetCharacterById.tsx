@@ -18,6 +18,7 @@ export const useGetCharacterById = (id: string) => {
   const query = useSuspenseQuery<IResponse<ICharacter>>({
     queryKey: [CHARACTER_ONE_KEY, id],
     queryFn: fetchFn(),
+    staleTime: 1000 * 60 * 30,
   });
   return { ...query };
 };

@@ -8,7 +8,10 @@ import { IComic } from "../interfaces/IComic";
 export const useGetCharacterComics = (id: string) => {
   const fetchFn = useCallback(
     () => async () => {
-      const res = await CharacterService.get({ path: `/${id}/comics` });
+      const res = await CharacterService.get({
+        path: `/${id}/comics`,
+        params: "&limit=20&orderBy=-onsaleDate",
+      });
       const json = await res.json();
       return json;
     },
@@ -18,6 +21,7 @@ export const useGetCharacterComics = (id: string) => {
   const query = useSuspenseQuery<IResponse<IComic>>({
     queryKey: [CHARACTER_COMIC_LIST_KEY, id],
     queryFn: fetchFn(),
+    staleTime: 1000 * 60 * 30,
   });
   return { ...query };
 };
