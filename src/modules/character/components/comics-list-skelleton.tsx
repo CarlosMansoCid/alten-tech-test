@@ -4,8 +4,8 @@ import ComicCardSkelleton from "./comic-card-skelleton";
 const ComicsListSkelleton = () => {
   return (
     <>
-      {new Array(10).fill("")?.map(() => {
-        return <ComicCardSkelleton />;
+      {new Array(10).fill("")?.map((_, index) => {
+        return <ComicCardSkelleton key={`${index}=${crypto.randomUUID()}`} />;
       })}
     </>
   );
