@@ -18,7 +18,7 @@ const SearchForm = () => {
         <SearchIcon height={"21.68px"} width={"24px"} />
       </span>
       <input
-        type="search"
+        type="text"
         placeholder={t("searchInput.placeholder")}
         onChange={(e: ChangeEvent<HTMLInputElement>) =>
           setFilters({ name: e.target.value })
