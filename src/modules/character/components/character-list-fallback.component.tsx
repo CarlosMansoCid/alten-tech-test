@@ -7,8 +7,8 @@ const CharacterListFallback = () => {
     <ul className="character_list__root">
       {new Array(27).fill("").map((_, index) => {
         return (
-          <li>
-            <CharacterCardSkelleton key={`${index}=${crypto.randomUUID()}`} />
+          <li key={`${index}=${crypto.randomUUID()}`}>
+            <CharacterCardSkelleton />
           </li>
         );
       })}
