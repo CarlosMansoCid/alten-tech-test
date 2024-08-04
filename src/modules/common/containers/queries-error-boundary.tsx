@@ -12,7 +12,7 @@ const QueryErrorBoundary = ({ children }: IQueryErrorBoundary) => {
     <ErrorBoundary
       onReset={reset}
       fallbackRender={({ resetErrorBoundary }) => (
-        <div>
+        <div aria-errormessage="">
           There was an error!
           <button onClick={() => resetErrorBoundary()}>Try again</button>
         </div>

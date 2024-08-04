@@ -2,7 +2,7 @@ import { memo } from "react";
 
 const ErrorOnFetch = () => {
   return (
-    <div>
+    <div aria-errormessage="Error">
       <h2>Ha ocurrido un error</h2>
     </div>
   );

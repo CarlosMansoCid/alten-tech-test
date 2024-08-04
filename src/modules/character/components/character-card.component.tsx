@@ -18,8 +18,11 @@ const CharacterCard = ({ character }: ICharacterCard) => {
     <article
       className="character_card__root"
       onClick={() => navigate(`/${character.id}/details`)}
+      data-testid="character-card-root"
     >
       <figure
+        role="img"
+        aria-label={`image of ${character.name}`}
         className="character_card__image_container"
         style={{
           background: `url(${thumbnail?.path}.${thumbnail?.extension})`,

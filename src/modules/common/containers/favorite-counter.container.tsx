@@ -25,9 +25,18 @@ const FavoriteCounterContainer = () => {
     }
   };
   return (
-    <div className="favorite_counter__root" onClick={action}>
+    <div
+      className="favorite_counter__root"
+      onClick={action}
+      role="button"
+      data-testid="favorites-counter-container"
+      aria-disabled={favorites.length > 0}
+    >
       <Favorite action={action} isFavorite={favorites.length > 0} />
-      <NavbarLabel label={favorites.length || 0} />
+      <NavbarLabel
+        label={favorites.length || 0}
+        data-testid="favorites-counter-label"
+      />
     </div>
   );
 };

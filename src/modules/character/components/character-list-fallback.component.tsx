@@ -1,14 +1,18 @@
 import { memo } from "react";
-import "../styles/character-list.css";
 import CharacterCardSkelleton from "./character-card.skelleton";
+import "../styles/character-list.css";
 
 const CharacterListFallback = () => {
   return (
-    <section className="character_list__root">
+    <ul className="character_list__root">
       {new Array(27).fill("").map(() => {
-        return <CharacterCardSkelleton key={`${crypto.randomUUID()}`} />;
+        return (
+          <li>
+            <CharacterCardSkelleton key={`${crypto.randomUUID()}`} />
+          </li>
+        );
       })}
-    </section>
+    </ul>
   );
 };
 

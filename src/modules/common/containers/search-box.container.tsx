@@ -9,7 +9,7 @@ const SearchBoxContainer = () => {
   const { characters } = useCharacterContext();
   //   const { t } = useTranslation("character");
   return (
-    <section className="search_box__root">
+    <section className="search_box__root" role="search">
       <span className="search_box__input_wrapper">
         <SearchForm />
       </span>
