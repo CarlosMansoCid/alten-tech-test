@@ -14,7 +14,10 @@ const DetailsHeaderContainer = ({ character }: IDetailsHeaderContainer) => {
   const { thumbnail, name, description } = character;
   const { isFavorite, toggleFavorite } = useCharacterCard(character);
   return (
-    <article className="details_header__info_container">
+    <article
+      className="details_header__info_container"
+      data-testid="details-header-container"
+    >
       <div className="details_header__image_container">
         <figure
           className="details_header__image"
@@ -34,6 +37,7 @@ const DetailsHeaderContainer = ({ character }: IDetailsHeaderContainer) => {
             label={name}
             isTitle={true}
             classnames="details_header__title"
+            data-testid="details-character-name"
           />
           <Favorite
             isFavorite={isFavorite}
