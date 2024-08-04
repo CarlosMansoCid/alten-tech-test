@@ -32,6 +32,7 @@
   line-height: 18.75px;
   height: 19px !important;
   background-color: transparent;
+  padding: 0 !important;
 }
 
 .search_box__icon_button {

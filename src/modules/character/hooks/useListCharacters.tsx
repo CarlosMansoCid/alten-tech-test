@@ -26,6 +26,7 @@ export const useListCharacters = () => {
   const query = useSuspenseQuery<IResponse<ICharacter>>({
     queryKey: [CHARACTER_LIST_KEY, filters],
     queryFn: fetchFn(),
+    staleTime: 1000 * 60 * 30,
   });
   if (query?.data?.message) throw new Error("");
   return query;
