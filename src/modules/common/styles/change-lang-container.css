@@ -48,6 +48,7 @@
   margin-right: 10px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .change_lang__lang_list > li {
