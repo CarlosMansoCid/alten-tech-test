@@ -1,8 +1,10 @@
+/// <reference types="cypress" />
+
 describe("template spec", () => {
   beforeEach(() => {
     cy.visit("http://localhost:5173");
   });
-  it("The app must render ok", () => {
+  it("The app must render", () => {
     cy.get("img[alt=logo]").should("exist");
   });
   it("Must get the characters info", () => {
